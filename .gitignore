@@ -2,3 +2,6 @@
 package-lock.json
 dist/
 todo.txt
+ROADMAP.md
+.idea
+/.idea
