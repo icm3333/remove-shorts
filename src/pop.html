@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body { font: 13px system-ui, sans-serif; width: 260px; margin: 0; padding: 12px; }
+    .row { display: flex; align-items: center; justify-content: space-between; margin: 8px 0; }
+    .stat { color: #444; }
+    input[type="number"] { width: 64px; }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <label for="enabled">Hide Shorts</label>
+    <input type="checkbox" id="enabled" />
+  </div>
+  <div class="row">
+    <label for="limit">Daily limit (min)</label>
+    <input type="number" id="limit" min="0" step="1" />
+  </div>
+  <div class="row stat">
+    <span id="watched-label">Watched today</span>
+    <span id="watched" role="status" aria-labelledby="watched-label">0m 0s</span>
+  </div>
+  <div class="row stat">
+    <span id="remaining-label">Remaining</span>
+    <span id="remaining" role="status" aria-labelledby="remaining-label">&mdash;</span>
+  </div>
+  <script src="../dist/pop.js"></script>
+</body>
+</html>
